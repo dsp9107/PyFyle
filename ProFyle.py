@@ -1,4 +1,4 @@
-import readpysource as rps
+import ReadPySource as rps
 import docx
 from docx.shared import Inches
 import pyautogui as pyg
@@ -6,7 +6,7 @@ import time
 
 print("Preparing ...")
 time.sleep(0.5)
-aim="WAP to calculate area of a circle"
+aim="WAP to calculate area of a circle."
 code=rps.read()
 
 pyg.keyDown('win')
@@ -25,7 +25,7 @@ pyg.typewrite('cd D:\\Python\\ProPy')
 pyg.press('enter')
 print("Running It Now ...")
 time.sleep(0.5)
-pyg.typewrite('python 3527.py')
+pyg.typewrite('python Script.py')
 pyg.press('enter')
 
 print("Screening ...")
