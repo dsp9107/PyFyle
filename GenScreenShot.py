@@ -1,3 +1,4 @@
+from PIL import ImageGrab
 import pyautogui as pyg
 import time
 import os
@@ -30,7 +31,11 @@ def genscreen(filename="Script.py"):
     print("Screening ...")
     time.sleep(1)
     #Take Screenshot
-    pyg.screenshot(fn)
+    pyg.keyDown('alt')
+    pyg.press('prtscr')
+    pyg.keyUp('alt')
+    im = ImageGrab.grabclipboard()
+    im.save(fn,'PNG')
     print("Catching A Breath ...")
     time.sleep(1)
     print("Exiting ...")
