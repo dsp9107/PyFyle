@@ -1,8 +1,6 @@
 import ReadPySource as rps
 import GenScreenShot as gss
-import time
-
-import docx
+import time, docx
 from docx.shared import Inches,Pt,Mm
 from docx.enum.style import WD_STYLE_TYPE
 from docx.enum.text import WD_TAB_ALIGNMENT

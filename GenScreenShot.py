@@ -1,7 +1,6 @@
 from PIL import ImageGrab
 import pyautogui as pyg
-import time
-import os
+import time, os
 
 path = os.path.dirname(os.path.realpath(__file__))
 fn="Screen.png"
@@ -24,6 +23,13 @@ def genscreen(filename="Script.py"):
     pyg.typewrite('cd '+path)
     pyg.press('enter')
     print("Running It Now ...")
+    time.sleep(0.5)
+    #Prepping The Screen
+    pyg.typewrite('echo off')
+    pyg.press('enter')
+    time.sleep(0.5)
+    pyg.typewrite('cls')
+    pyg.press('enter')
     time.sleep(0.5)
     #Execute Python Script
     pyg.typewrite('python '+filename)
