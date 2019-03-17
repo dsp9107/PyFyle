@@ -6,7 +6,7 @@ from docx.enum.style import WD_STYLE_TYPE
 from docx.enum.text import WD_TAB_ALIGNMENT
 
 #print("Input Required Data")
-UID="17BCS3527"#input("UID - ")
+UID=input("UID - ")
 githandle="@dsp9107"#"@"+input("githandle - ")
 aim="WAP to calculate area of a circle"#input("Aim : ")
 source="Script.py"#input("Name of File - ")
