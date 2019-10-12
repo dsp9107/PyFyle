@@ -1,0 +1,28 @@
+{
+	"user": {
+		"uid": "uid",
+		"githandle": "dsp9107"
+	},
+	"infile": "script.py",
+	"outfile": "Python-Practical-uid",
+	"styles": [
+		{
+			"name": "Heading",
+			"font": "Calibri",
+			"size": 16,
+			"bold": true
+		},
+		{
+			"name": "Text",
+			"font": "Calibri",
+			"size": 13,
+			"bold": false
+		},
+		{
+			"name": "Code",
+			"font": "Courier New",
+			"size": 10,
+			"bold": false
+		}
+	]
+}
