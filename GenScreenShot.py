@@ -40,6 +40,7 @@ def genscreen(filename="Script.py"):
     pyg.keyDown('alt')
     pyg.press('prtscr')
     pyg.keyUp('alt')
+    time.sleep(1)
     im = ImageGrab.grabclipboard()
     im.save(fn,'PNG')
     print("Catching A Breath ...")
