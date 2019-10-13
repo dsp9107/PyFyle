@@ -114,30 +114,21 @@ tab_stops.add_tab_stop(Inches(6.0), WD_TAB_ALIGNMENT.RIGHT)
 # Add Header
 header = section.header
 paragraph = header.paragraphs[0]
-paragraph.text = "\t\t"+UID
+paragraph.text = "\t\t" + UID
 paragraph.style = doc.styles["Head"]
 
 # Add Footer
 footer = section.footer
 paragraph = footer.paragraphs[0]
-paragraph.text = "\t\t@"+githandle
+paragraph.text = "\t\t@" + githandle
 paragraph.style = doc.styles["Head"]
 
-# Set Style - Heading
-style = doc.styles.add_style('Heading', WD_STYLE_TYPE.PARAGRAPH)
-style.font.name = 'Calibri'
-style.font.size = Pt(16)
-style.font.bold = True
-
-# Set Style - Text
-style = doc.styles.add_style('Text', WD_STYLE_TYPE.PARAGRAPH)
-style.font.name = 'Calibri'
-style.font.size = Pt(13)
-
-# Set Style - Code
-style = doc.styles.add_style('Code', WD_STYLE_TYPE.PARAGRAPH)
-style.font.name = 'Courier New'
-style.font.size = Pt(10)
+# Create Styles
+for s in detail['styles']:
+    style = doc.styles.add_style(s, WD_STYLE_TYPE.PARAGRAPH)
+    style.font.name = detail['styles'][s]['font']
+    style.font.size = Pt(detail['styles'][s]['size'])
+    style.font.bold = detail['styles'][s]['bold']
 
 # Add Aim
 p = doc.add_paragraph("Aim :", style = 'Heading')

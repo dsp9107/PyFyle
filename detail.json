@@ -5,24 +5,21 @@
 	},
 	"infile": "script.py",
 	"outfile": "Python-Practical-uid",
-	"styles": [
-		{
-			"name": "Heading",
+	"styles": {
+		"Heading": {
 			"font": "Calibri",
 			"size": 16,
 			"bold": true
 		},
-		{
-			"name": "Text",
+		"Text": {
 			"font": "Calibri",
 			"size": 13,
 			"bold": false
 		},
-		{
-			"name": "Code",
+		"Code": {
 			"font": "Courier New",
-			"size": 10,
+			"size": 11,
 			"bold": false
 		}
-	]
+	}
 }
